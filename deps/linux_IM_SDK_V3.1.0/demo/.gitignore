@@ -1,9 +1,0 @@
-*.o
-log
-linux_demo/appdata
-linux_demo/demo
-linux_demo/easemobDB
-linux_demo/easemobLog
-linux_demo/server.xml
-mac_demo/MacDemo.xcodeproj/xcuserdata
-ios_demo/IosDemo.xcodeproj/xcuserdata

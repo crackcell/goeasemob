@@ -1,6 +1,0 @@
-digraph "easemob::EMGroupManagerInterface"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="{easemob::EMGroupManagerInterface\n||+ ~EMGroupManagerInterface()\l+ addListener()\l+ removeListener()\l+ clearListeners()\l+ groupWithId()\l+ allMyGroups()\l+ loadAllMyGroupsFromDB()\l+ fetchAllMyGroups()\l+ fetchPublicGroupsWithCursor()\l+ createGroup()\land 19 more...\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
-}

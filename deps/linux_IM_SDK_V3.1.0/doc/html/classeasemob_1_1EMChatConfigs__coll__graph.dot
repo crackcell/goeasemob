@@ -1,6 +1,0 @@
-digraph "easemob::EMChatConfigs"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="{easemob::EMChatConfigs\n||+ EMChatConfigs()\l+ ~EMChatConfigs()\l+ setUsingHttps()\l+ getUsingHttps()\l+ setUseEncryption()\l+ getUseEncryption()\l+ setNetCallback()\l+ getNetCallback()\l+ getResourcePath()\l+ getWorkPath()\land 40 more...\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
-}

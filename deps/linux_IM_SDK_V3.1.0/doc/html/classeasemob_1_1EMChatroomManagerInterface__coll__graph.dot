@@ -1,6 +1,0 @@
-digraph "easemob::EMChatroomManagerInterface"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="{easemob::EMChatroomManager\lInterface\n||+ ~EMChatroomManagerInterface()\l+ addListener()\l+ removeListener()\l+ clearListeners()\l+ chatroomWithId()\l+ fetchAllChatrooms()\l+ fetchChatroomSpecification()\l+ joinChatroom()\l+ leaveChatroom()\l+ fetchChatroomsWithCursor()\l+ joinedChatroomById()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
-}

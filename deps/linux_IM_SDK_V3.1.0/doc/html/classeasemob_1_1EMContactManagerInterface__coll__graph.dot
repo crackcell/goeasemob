@@ -1,6 +1,0 @@
-digraph "easemob::EMContactManagerInterface"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="{easemob::EMContactManager\lInterface\n||+ ~EMContactManagerInterface()\l+ registerContactListener()\l+ removeContactListener()\l+ allContacts()\l+ getContactsFromServer()\l+ getContactsFromDB()\l+ inviteContact()\l+ deleteContact()\l+ acceptInvitation()\l+ declineInvitation()\land 6 more...\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
-}

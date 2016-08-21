@@ -1,9 +1,0 @@
-digraph "release/include/message" {
-  compound=true
-  node [ fontsize="10", fontname="Helvetica"];
-  edge [ labelfontsize="10", labelfontname="Helvetica"];
-  subgraph clusterdir_42743c43973611cb0b05144d150e48a5 {
-    graph [ bgcolor="#ddddee", pencolor="black", label="include" fontname="Helvetica", fontsize="10", URL="dir_42743c43973611cb0b05144d150e48a5.html"]
-  dir_5ad1a3808f8375c1706ef9279fcef1ed [shape=box, label="message", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_5ad1a3808f8375c1706ef9279fcef1ed.html"];
-  }
-}
