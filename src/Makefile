@@ -13,11 +13,13 @@ include ../Makefile.env
 
 BUILD_TARGETS = libgoeasemob.a
 
-INC = -I../include -I./ -I$(EM_DEPS)/include
-LIB = -leasemob -L$(EM_DEPS)
+INC = -I../include -I.
+LIB = -pthread \
+	-lcurl -lssl -lz -lncurses -lsqlite3 \
+	-leasemob -L../lib
 
-SRC = $(wildcard *.cpp)
-OBJ = $(patsubst %.cpp, %.o, $(SRC))
+SRC = $(wildcard *.cc)
+OBJ = $(patsubst %.cc, %.o, $(SRC))
 
 .PHONY : all clean
 
