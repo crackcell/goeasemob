@@ -91,7 +91,9 @@ void EasemobClient::onReceiveMessages(const EMMessageList &messages) {
         }
     }
 
-    recv_callback_(messageList);
+    if (!recv_callback_) {
+        recv_callback_(messageList);
+    }
 }
 
 /* vim: set expandtab shiftwidth=2 tabstop=2: */

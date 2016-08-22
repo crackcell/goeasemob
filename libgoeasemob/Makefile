@@ -16,8 +16,11 @@ include Makefile.env
 all : output
 
 output :
-	mkdir -p output
+	mkdir -p output/lib output/include
 	$(MAKE) -C src
+	cp -r include/* output/include/
+	cp -r lib/* output/lib/
+	cp src/*.a output/lib/
 
 clean :
 	rm -rf output
