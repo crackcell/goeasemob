@@ -28,10 +28,6 @@
 #include <emchatmanager_listener.h>
 #include <emcallback.h>
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
 typedef void (*ReceiveCallback)(const std::list<std::string> messages);
 
 class EasemobClient : public easemob::EMChatManagerListener {
@@ -58,10 +54,6 @@ public:
     // EMChatManagerListener calback
     virtual void onReceiveMessages(const easemob::EMMessageList &messages);
 };
-
-#ifdef __cplusplus
-}
-#endif
 
 #endif /* _EASEMOB_CLIENT_H_ */
 
