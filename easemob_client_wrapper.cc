@@ -23,51 +23,54 @@
 
 #include <stdlib.h>
 
-EasemobClient *p;
-
-void easemob_client_new() {
+easemob_client *p easemob_client_new() {
     if (p) {
         return;
     }
-    p = new EasemobClient;
+    easemob_client *p = (easemob_client *)malloc(sizeof(easemob_client));
+    p->client =  new EasemobClient;
 }
 
 void easemob_client_free() {
     if (!p) {
         return;
     }
-    delete p;
+    delete p->client;
+    free(p);
 }
 
-int easemob_client_init(const char *workpath, const char *appkey) {
-    if (!p || !workpath || !appkey) {
+int easemob_client_init(easemob_client *p, const char *workpath, const char *appkey) {
+    if (!p || !p->client || !workpath || !appkey) {
         return 1;
     }
 
-    return p->Init(workpath, appkey);
+    return p->client->Init(workpath, appkey);
 }
 
-int easemob_client_login(const char *username, const char *password) {
-    if (!p) {
+int easemob_client_login(easemob_client *p, const char *username, const char *password) {
+    if (!p || !p->client) {
         return 1;
     }
     
-    return p->Login(username, password);
+    return p->client->Login(username, password);
 }
 
-void easemob_client_logout() {
-    p->Logout();
+void easemob_client_logout(easemob_client *p) {
+    if (!p || !p->client) {
+        return;
+    }
+    p->client->Logout();
 }
 
-int easemob_client_sendmessage(const char *receiver, const char *message) {
-    if (!p) {
+int easemob_client_sendmessage(easemob_client *p, const char *receiver, const char *message) {
+    if (!p || !p->client) {
         return 1;
     }
-    return p->SendMessage(receiver, message);
+    return p->client->SendMessage(receiver, message);
 }
 
-void easemob_client_set_message_receive_callback(receive_message_callback_func func) {
-    if (!p) {
+void easemob_client_set_message_receive_callback(easemob_client *p, receive_message_callback_func func) {
+    if (!p || !p->client) {
         return;
     }
 }
