@@ -58,17 +58,14 @@ type easemobClient struct {
 
 // Global static instance
 var instance = &easemobClient{}
+var isInit = false
 
 func (p *easemobClient) Init(workpath, appkey string) {
-	/*
-		workpathCStr := C.CString(workpath)
-		defer C.free(unsafe.Pointer(workpathCStr))
+	if isInit {
+		return
+	}
 
-		appkeyCStr := C.CString(appkey)
-		defer C.free(unsafe.Pointer(appkeyCStr))
-	*/
-
-	client := C.easemob_client_new()
+	C.easemob_client_new()
 }
 
 func (p *easemobClient) Login(username, password string) {

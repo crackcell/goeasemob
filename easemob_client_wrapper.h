@@ -21,16 +21,30 @@
  *
  **/
 
+#include "easemob_client.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 typedef void (*receive_message_callback_func)(const char* messages);
 
-void easemob_client_new();
-void easemob_client_free();
+typedef easemob_client {
+    EasemobClient *client;
+} easemob_client_t;
 
-int easemob_client_init(const char *workpath, const char *appkey);
-int easemob_client_login(const char *username, const char *password);
-void easemob_client_logout();
-int easemob_client_sendmessage(const char *receiver, const char *message);
-void easemob_client_set_message_receive_callback(receive_message_callback_func func);
+easemob_client_t* easemob_client_new();
+void easemob_client_free(easemob_client *p);
+
+int easemob_client_init(easemob_client *p, const char *workpath, const char *appkey);
+int easemob_client_login(easemob_client *p, const char *username, const char *password);
+void easemob_client_logout(easemob_client *p);
+int easemob_client_sendmessage(easemob_client *p, const char *receiver, const char *message);
+void easemob_client_set_message_receive_callback(easemob_client *p, receive_message_callback_func func);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* _GOEASEMOB_WRAPPER_H_ */
 
