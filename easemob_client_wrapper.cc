@@ -12,14 +12,14 @@
 /**
  * 
  *
- * @file easemob_client_c.cc
+ * @file goeasemob_wrapper.cc
  * @author Menglong TAN <tanmenglong@gmail.com>
  * @date Tue Aug 23 00:05:12 2016
  *
  **/
 
-#include <goeasemob/easemob_client_c.h>
-#include <goeasemob/easemob_client.h>
+#include "easemob_client_wrapper.h"
+#include "easemob_client.h"
 
 #include <stdlib.h>
 

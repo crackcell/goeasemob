@@ -19,15 +19,13 @@
 package goeasemob
 
 /*
-#cgo linux CFLAGS: -DOS_LINUX -I./libgoeasemob/output/include
-#cgo linux LDFLAGS: -L./libgoeasemob/output/lib -leasemob -lgoeasemob -lstdc++
+#cgo linux CXXFLAGS: -std=c++11 -g -Wall -Werror -I./libgoeasemob/output/include
+#cgo linux LDFLAGS: -L./libeasemob/output/lib -leasemob -pthread -lcurl -lssl -lz -lncurses -lsqlite3
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <goeasemob/easemob_client_c.h>
+#include "easemob_client_wrapper.h"
+
 */
 import "C"
-import "unsafe"
 
 //===================================================================
 // Public APIs
@@ -62,11 +60,13 @@ type easemobClient struct {
 var instance = &easemobClient{}
 
 func (p *easemobClient) Init(workpath, appkey string) {
-	workpathCStr := C.CString(workpath)
-	defer C.free(unsafe.Pointer(workpathCStr))
+	/*
+		workpathCStr := C.CString(workpath)
+		defer C.free(unsafe.Pointer(workpathCStr))
 
-	appkeyCStr := C.CString(appkey)
-	defer C.free(unsafe.Pointer(appkeyCStr))
+		appkeyCStr := C.CString(appkey)
+		defer C.free(unsafe.Pointer(appkeyCStr))
+	*/
 
 	client := C.easemob_client_new()
 }

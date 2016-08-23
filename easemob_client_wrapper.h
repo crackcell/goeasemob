@@ -5,25 +5,21 @@
  * Copyright (c) 2016, Menglong TAN <tanmenglong@gmail.com>
  *
  * This program is free software; you can redistribute it
- * and/or modify it under the terms of the Apache licence
+ * and/or modify it under the terms of the GPL licence
  *
  **************************************************************/
 
-#ifndef _EASEMOB_CLIENT_C_H_
-#define _EASEMOB_CLIENT_C_H_
+#ifndef _GOEASEMOB_WRAPPER_H_
+#define _GOEASEMOB_WRAPPER_H_
 
 /**
  * 
  *
- * @file easemob_client_c.h
+ * @file goeasemob_wrapper.h
  * @author Menglong TAN <tanmenglong@gmail.com>
- * @date Mon Aug 22 22:33:52 2016
+ * @date Tue Aug 23 19:13:38 2016
  *
  **/
-
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 typedef void (*receive_message_callback_func)(const char* messages);
 
@@ -36,10 +32,6 @@ void easemob_client_logout();
 int easemob_client_sendmessage(const char *receiver, const char *message);
 void easemob_client_set_message_receive_callback(receive_message_callback_func func);
 
-#ifdef __cplusplus
-}
-#endif
-
-#endif /* _EASEMOB_CLIENT_C_H_ */
+#endif /* _GOEASEMOB_WRAPPER_H_ */
 
 /* vim: set expandtab shiftwidth=2 tabstop=2: */
