@@ -19,8 +19,8 @@
 package goeasemob
 
 /*
-#cgo linux CXXFLAGS: -std=c++11 -g -Wall -Werror -I./libgoeasemob/output/include
-#cgo linux LDFLAGS: -L./libeasemob/output/lib -leasemob -pthread -lcurl -lssl -lz -lncurses -lsqlite3
+#cgo linux CXXFLAGS: -std=c++11 -g -Wall -Werror -I./libeasemob/include
+#cgo linux LDFLAGS: -L./libeasemob/lib -leasemob -pthread -lcurl -lssl -lz -lncurses -lsqlite3
 
 #include "easemob_client_wrapper.h"
 

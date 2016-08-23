@@ -18,7 +18,7 @@
  *
  **/
 
-#include <goeasemob/easemob_client.h>
+#include "easemob_client.h"
 
 #include <emclient.h>
 #include <emchatmanager_interface.h>
