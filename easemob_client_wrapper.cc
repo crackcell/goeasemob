@@ -23,7 +23,7 @@
 
 #include <stdlib.h>
 
-easemob_client *p easemob_client_new() {
+easemob_client* easemob_client_new() {
     if (p) {
         return;
     }
@@ -39,7 +39,7 @@ void easemob_client_free() {
     free(p);
 }
 
-int easemob_client_init(easemob_client *p, const char *workpath, const char *appkey) {
+int easemob_client_init(easemob_client_t *p, const char *workpath, const char *appkey) {
     if (!p || !p->client || !workpath || !appkey) {
         return 1;
     }
@@ -47,7 +47,7 @@ int easemob_client_init(easemob_client *p, const char *workpath, const char *app
     return p->client->Init(workpath, appkey);
 }
 
-int easemob_client_login(easemob_client *p, const char *username, const char *password) {
+int easemob_client_login(easemob_client_t *p, const char *username, const char *password) {
     if (!p || !p->client) {
         return 1;
     }
@@ -55,14 +55,14 @@ int easemob_client_login(easemob_client *p, const char *username, const char *pa
     return p->client->Login(username, password);
 }
 
-void easemob_client_logout(easemob_client *p) {
+void easemob_client_logout(easemob_client_t *p) {
     if (!p || !p->client) {
         return;
     }
     p->client->Logout();
 }
 
-int easemob_client_sendmessage(easemob_client *p, const char *receiver, const char *message) {
+int easemob_client_sendmessage(easemob_client_t *p, const char *receiver, const char *message) {
     if (!p || !p->client) {
         return 1;
     }

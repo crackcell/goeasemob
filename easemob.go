@@ -22,7 +22,16 @@ package goeasemob
 #cgo linux CXXFLAGS: -std=c++11 -g -Wall -Werror -I./libeasemob/include
 #cgo linux LDFLAGS: -L./libeasemob/lib -leasemob -pthread -lcurl -lssl -lz -lncurses -lsqlite3
 
-#include "easemob_client_wrapper.h"
+struct easemob_client;
+
+extern easemob_client* easemob_client_new();
+extern void easemob_client_free(easemob_client *p);
+
+extern int easemob_client_init(easemob_client *p, const char *workpath, const char *appkey);
+extern int easemob_client_login(easemob_client *p, const char *username, const char *password);
+extern void easemob_client_logout(easemob_client *p);
+extern int easemob_client_sendmessage(easemob_client *p, const char *receiver, const char *message);
+extern void easemob_client_set_message_receive_callback(easemob_client *p, receive_message_callback_func func);
 
 */
 import "C"

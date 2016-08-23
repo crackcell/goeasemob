@@ -29,18 +29,18 @@ extern "C" {
 
 typedef void (*receive_message_callback_func)(const char* messages);
 
-typedef easemob_client {
+typedef struct easemob_client {
     EasemobClient *client;
 } easemob_client_t;
 
 easemob_client_t* easemob_client_new();
-void easemob_client_free(easemob_client *p);
+void easemob_client_free(easemob_client_t *p);
 
-int easemob_client_init(easemob_client *p, const char *workpath, const char *appkey);
-int easemob_client_login(easemob_client *p, const char *username, const char *password);
-void easemob_client_logout(easemob_client *p);
-int easemob_client_sendmessage(easemob_client *p, const char *receiver, const char *message);
-void easemob_client_set_message_receive_callback(easemob_client *p, receive_message_callback_func func);
+int easemob_client_init(easemob_client_t *p, const char *workpath, const char *appkey);
+int easemob_client_login(easemob_client_t *p, const char *username, const char *password);
+void easemob_client_logout(easemob_client_t *p);
+int easemob_client_sendmessage(easemob_client_t *p, const char *receiver, const char *message);
+void easemob_client_set_message_receive_callback(easemob_client_t *p, receive_message_callback_func func);
 
 #ifdef __cplusplus
 }
