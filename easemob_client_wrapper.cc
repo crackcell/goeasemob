@@ -23,12 +23,10 @@
 
 #include <stdlib.h>
 
-easemob_client* easemob_client_new() {
-    if (p) {
-        return;
-    }
-    easemob_client *p = (easemob_client *)malloc(sizeof(easemob_client));
+void* easemob_client_new() {
+    easemob_client *p = (easemob_client*)malloc(sizeof(easemob_client));
     p->client =  new EasemobClient;
+    return p;
 }
 
 void easemob_client_free() {

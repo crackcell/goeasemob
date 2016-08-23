@@ -22,16 +22,16 @@ package goeasemob
 #cgo linux CXXFLAGS: -std=c++11 -g -Wall -Werror -I./libeasemob/include
 #cgo linux LDFLAGS: -L./libeasemob/lib -leasemob -pthread -lcurl -lssl -lz -lncurses -lsqlite3
 
-struct easemob_client;
+typedef void (*receive_message_callback_func)(const char* messages);
 
-extern easemob_client* easemob_client_new();
-extern void easemob_client_free(easemob_client *p);
+extern void* easemob_client_new();
+extern void easemob_client_free(void *p);
 
-extern int easemob_client_init(easemob_client *p, const char *workpath, const char *appkey);
-extern int easemob_client_login(easemob_client *p, const char *username, const char *password);
-extern void easemob_client_logout(easemob_client *p);
-extern int easemob_client_sendmessage(easemob_client *p, const char *receiver, const char *message);
-extern void easemob_client_set_message_receive_callback(easemob_client *p, receive_message_callback_func func);
+extern int easemob_client_init(void *p, const char *workpath, const char *appkey);
+extern int easemob_client_login(void *p, const char *username, const char *password);
+extern void easemob_client_logout(void *p);
+extern int easemob_client_sendmessage(void *p, const char *receiver, const char *message);
+extern void easemob_client_set_message_receive_callback(void *p, receive_message_callback_func func);
 
 */
 import "C"
