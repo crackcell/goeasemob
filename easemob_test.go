@@ -16,7 +16,7 @@
  *
  **/
 
-package goeasemob
+package easemob
 
 import (
 	"fmt"
@@ -24,10 +24,7 @@ import (
 )
 
 func TestAll(t *testing.T) {
-	fmt.Println("testing")
-
-	client := GetEasemobClient()
-	client.Init(".", "renrenche#testaapp")
-	client.Login("test1", "testpass")
-	client.Logout()
+	c := easemob.NewEasemobClient()
+	c.Init("./", "renrenche#testapp")
+	c.Login("test1", "test")
 }

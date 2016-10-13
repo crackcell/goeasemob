@@ -22,13 +22,13 @@
  **/
 
 #include <string>
-#include <list>
+#include <vector>
 
 #include <emclient.h>
 #include <emchatmanager_listener.h>
 #include <emcallback.h>
 
-typedef void (*ReceiveCallback)(const std::list<std::string> messages);
+typedef void (*ReceiveCallback)(const std::vector<std::string> messages);
 
 class EasemobClient : public easemob::EMChatManagerListener {
 protected:

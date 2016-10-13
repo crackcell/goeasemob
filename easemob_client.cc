@@ -80,7 +80,7 @@ int EasemobClient::SendMessage(const string &to, const string message) {
 }
 
 void EasemobClient::onReceiveMessages(const EMMessageList &messages) {
-    list<string> messageList;
+    vector<string> messageList;
 
     if (messages.size() > 0) {
         for(auto m : messages) {
