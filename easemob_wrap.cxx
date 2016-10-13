@@ -236,7 +236,7 @@ static void Swig_free(void* p) {
 }
 
 
-#include "easemob_client.h"
+#include "easemobclient.h"
 
 
 #include <string>
@@ -263,7 +263,7 @@ SWIGINTERN void std_vector_Sl_std_string_Sg__set(std::vector< std::string > *sel
 extern "C" {
 #endif
 
-void _wrap_Swig_free_easemob_bbb5f7a6762ad903(void *_swig_go_0) {
+void _wrap_Swig_free_easemob_e9ef9d9b1e3d793e(void *_swig_go_0) {
   void *arg1 = (void *) 0 ;
   
   arg1 = *(void **)&_swig_go_0; 
@@ -273,7 +273,7 @@ void _wrap_Swig_free_easemob_bbb5f7a6762ad903(void *_swig_go_0) {
 }
 
 
-std::vector< std::string > *_wrap_new_StringVector__SWIG_0_easemob_bbb5f7a6762ad903() {
+std::vector< std::string > *_wrap_new_StringVector__SWIG_0_easemob_e9ef9d9b1e3d793e() {
   std::vector< std::string > *result = 0 ;
   std::vector< std::string > *_swig_go_result;
   
@@ -284,7 +284,7 @@ std::vector< std::string > *_wrap_new_StringVector__SWIG_0_easemob_bbb5f7a6762ad
 }
 
 
-std::vector< std::string > *_wrap_new_StringVector__SWIG_1_easemob_bbb5f7a6762ad903(long long _swig_go_0) {
+std::vector< std::string > *_wrap_new_StringVector__SWIG_1_easemob_e9ef9d9b1e3d793e(long long _swig_go_0) {
   std::vector< std::string >::size_type arg1 ;
   std::vector< std::string > *result = 0 ;
   std::vector< std::string > *_swig_go_result;
@@ -297,7 +297,7 @@ std::vector< std::string > *_wrap_new_StringVector__SWIG_1_easemob_bbb5f7a6762ad
 }
 
 
-long long _wrap_StringVector_size_easemob_bbb5f7a6762ad903(std::vector< std::string > *_swig_go_0) {
+long long _wrap_StringVector_size_easemob_e9ef9d9b1e3d793e(std::vector< std::string > *_swig_go_0) {
   std::vector< std::string > *arg1 = (std::vector< std::string > *) 0 ;
   std::vector< std::string >::size_type result;
   long long _swig_go_result;
@@ -310,7 +310,7 @@ long long _wrap_StringVector_size_easemob_bbb5f7a6762ad903(std::vector< std::str
 }
 
 
-long long _wrap_StringVector_capacity_easemob_bbb5f7a6762ad903(std::vector< std::string > *_swig_go_0) {
+long long _wrap_StringVector_capacity_easemob_e9ef9d9b1e3d793e(std::vector< std::string > *_swig_go_0) {
   std::vector< std::string > *arg1 = (std::vector< std::string > *) 0 ;
   std::vector< std::string >::size_type result;
   long long _swig_go_result;
@@ -323,7 +323,7 @@ long long _wrap_StringVector_capacity_easemob_bbb5f7a6762ad903(std::vector< std:
 }
 
 
-void _wrap_StringVector_reserve_easemob_bbb5f7a6762ad903(std::vector< std::string > *_swig_go_0, long long _swig_go_1) {
+void _wrap_StringVector_reserve_easemob_e9ef9d9b1e3d793e(std::vector< std::string > *_swig_go_0, long long _swig_go_1) {
   std::vector< std::string > *arg1 = (std::vector< std::string > *) 0 ;
   std::vector< std::string >::size_type arg2 ;
   
@@ -335,7 +335,7 @@ void _wrap_StringVector_reserve_easemob_bbb5f7a6762ad903(std::vector< std::strin
 }
 
 
-bool _wrap_StringVector_isEmpty_easemob_bbb5f7a6762ad903(std::vector< std::string > *_swig_go_0) {
+bool _wrap_StringVector_isEmpty_easemob_e9ef9d9b1e3d793e(std::vector< std::string > *_swig_go_0) {
   std::vector< std::string > *arg1 = (std::vector< std::string > *) 0 ;
   bool result;
   bool _swig_go_result;
@@ -348,7 +348,7 @@ bool _wrap_StringVector_isEmpty_easemob_bbb5f7a6762ad903(std::vector< std::strin
 }
 
 
-void _wrap_StringVector_clear_easemob_bbb5f7a6762ad903(std::vector< std::string > *_swig_go_0) {
+void _wrap_StringVector_clear_easemob_e9ef9d9b1e3d793e(std::vector< std::string > *_swig_go_0) {
   std::vector< std::string > *arg1 = (std::vector< std::string > *) 0 ;
   
   arg1 = *(std::vector< std::string > **)&_swig_go_0; 
@@ -358,7 +358,7 @@ void _wrap_StringVector_clear_easemob_bbb5f7a6762ad903(std::vector< std::string 
 }
 
 
-void _wrap_StringVector_add_easemob_bbb5f7a6762ad903(std::vector< std::string > *_swig_go_0, _gostring_ _swig_go_1) {
+void _wrap_StringVector_add_easemob_e9ef9d9b1e3d793e(std::vector< std::string > *_swig_go_0, _gostring_ _swig_go_1) {
   std::vector< std::string > *arg1 = (std::vector< std::string > *) 0 ;
   std::vector< std::string >::value_type *arg2 = 0 ;
   
@@ -373,7 +373,7 @@ void _wrap_StringVector_add_easemob_bbb5f7a6762ad903(std::vector< std::string > 
 }
 
 
-_gostring_ _wrap_StringVector_get_easemob_bbb5f7a6762ad903(std::vector< std::string > *_swig_go_0, intgo _swig_go_1) {
+_gostring_ _wrap_StringVector_get_easemob_e9ef9d9b1e3d793e(std::vector< std::string > *_swig_go_0, intgo _swig_go_1) {
   std::vector< std::string > *arg1 = (std::vector< std::string > *) 0 ;
   int arg2 ;
   std::vector< std::string >::value_type *result = 0 ;
@@ -396,7 +396,7 @@ _gostring_ _wrap_StringVector_get_easemob_bbb5f7a6762ad903(std::vector< std::str
 }
 
 
-void _wrap_StringVector_set_easemob_bbb5f7a6762ad903(std::vector< std::string > *_swig_go_0, intgo _swig_go_1, _gostring_ _swig_go_2) {
+void _wrap_StringVector_set_easemob_e9ef9d9b1e3d793e(std::vector< std::string > *_swig_go_0, intgo _swig_go_1, _gostring_ _swig_go_2) {
   std::vector< std::string > *arg1 = (std::vector< std::string > *) 0 ;
   int arg2 ;
   std::vector< std::string >::value_type *arg3 = 0 ;
@@ -421,7 +421,7 @@ void _wrap_StringVector_set_easemob_bbb5f7a6762ad903(std::vector< std::string > 
 }
 
 
-void _wrap_delete_StringVector_easemob_bbb5f7a6762ad903(std::vector< std::string > *_swig_go_0) {
+void _wrap_delete_StringVector_easemob_e9ef9d9b1e3d793e(std::vector< std::string > *_swig_go_0) {
   std::vector< std::string > *arg1 = (std::vector< std::string > *) 0 ;
   
   arg1 = *(std::vector< std::string > **)&_swig_go_0; 

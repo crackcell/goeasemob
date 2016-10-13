@@ -1,6 +1,6 @@
 %module easemob
 %{
-#include "easemob_client.h"
+#include "easemobclient.h"
 %}
 
 %include <typemaps.i>
@@ -11,4 +11,4 @@ namespace std {
   %template(StringVector) vector<string>;
 }
 
-#include "easemob_client.h"
+#include "easemobclient.h"
