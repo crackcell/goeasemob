@@ -19,7 +19,7 @@
 package easemob
 
 import (
-	"fmt"
+//	"fmt"
 	"testing"
 )
 
